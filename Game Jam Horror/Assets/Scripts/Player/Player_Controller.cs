@@ -53,7 +53,7 @@ public class Player_Controller : MonoBehaviour
     {
         if(threeDObject != null)
         {
-            //rotate the fbx on the z axis ?
+            //rotate the fbx on the z axis + an offset of 90 degrees
             mousePos = camera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
             threeDObject.transform.rotation = Quaternion.Euler(new Vector3(
                 -127,
